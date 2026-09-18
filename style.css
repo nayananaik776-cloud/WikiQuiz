@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #5b2c83;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #6c3baa;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #51247a;
+}
+
+.quiz-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.quiz-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.option {
+    width: 100%;
+    background: #f1e8ff;
+    color: #4a2869;
+    border: 2px solid #d8c2f0;
+}
+
+.option:hover {
+    background: #dfc8fa;
+}
+
+#nextBtn {
+    margin-top: 10px;
+}
+
+.result-section {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    background: #f5efff;
+    border-radius: 15px;
+}
+
+.result-section h2 {
+    color: #5b2c83;
+}
+
+#score {
+    color: #6c3baa;
+    margin-top: 10px;
+}
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background: #6c3baa;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+#difficulty {
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+    color: #4a2869;
+    cursor: pointer;
+}
+#nextBtn {
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#restartBtn {
+    margin-top: 10px;
+    font-weight: bold;
+}
