@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiQuiz</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 WikiQuiz</h1>
+        <p>Learn from Wikipedia. Test your knowledge!</p>
+
+       <div class="search-box">
+    <input type="text" id="topicInput" placeholder="Enter a topic...">
+
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+        <div id="quizSection" class="quiz-section">
+
+            <div class="progress-container">
+    <div id="progressBar"></div>
+</div>
+            <h2 id="question">Question will appear here</h2>
+
+            <div class="options">
+                <button class="option">Option 1</button>
+                <button class="option">Option 2</button>
+                <button class="option">Option 3</button>
+                <button class="option">Option 4</button>
+            </div>
+
+            <button id="nextBtn">Next Question</button>
+
+        </div>
+
+        <div id="resultSection" class="result-section">
+            <h2>Quiz Completed 🎉</h2>
+            <p>Your Score:</p>
+            <h1 id="score">0 / 0</h1>
+            <p id="percentage">0%</p>
+            <p id="message"></p>
+            <button id="restartBtn" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
